@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family:  'Roboto', sans-serif;
+}
+
 .wrapper{
     display: grid;
     grid-template-areas:
@@ -7,21 +14,50 @@
     margin: 0 auto;
     width: 90%;
     padding: 20px;
+    height: 100%;
 }
 
 #header{
     grid-area: a;
+    height: 10%;
+    min-height: 50px;
+    max-height: 70px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+
 }
 
 #header ul{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #292929;
+    height: 100%;
+    list-style: none;
+    justify-content: flex-start;
+}
 
+#header nav{
+    height: 100%;
 }
 
 #header > nav > ul > li{
-    margin: 15px;
-    
+    margin-right: 15px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(134, 13, 13);
+    height: 100%;
+    background-color: #880e0e;
+    width: 20%;
+}
+
+#header > nav > ul > li:hover{
+    background-color: hsl(0, 1%, 27%);
 }
 
 aside{
