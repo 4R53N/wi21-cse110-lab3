@@ -1,0 +1,37 @@
+.wrapper{
+    display: grid;
+    grid-template-areas:
+    "a a a a a a"
+    "b b c c c c"
+    "d d d d d d";
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+}
+
+#header{
+    grid-area: a;
+}
+
+#header ul{
+    display: flex;
+    flex-direction: row;
+
+}
+
+#header > nav > ul > li{
+    margin: 15px;
+    
+}
+
+aside{
+    grid-area: b;
+}
+
+main{
+    grid-area: c;
+}
+
+footer{
+    grid-area: d;
+}
